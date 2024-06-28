@@ -4,6 +4,11 @@ public class Human {
     private String nama;
     private int age;
 
+    public Human(String nama, int age) {
+        this.nama = nama;
+        this.age = age;
+    }
+
     public String getNama() {
         return nama;
     }
