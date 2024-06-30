@@ -8,16 +8,22 @@ package org.example;
     - abstract class cuman bisa diinstace kalau melalui subclass dari abstract class
     - boleh ada field dan constructor
 * */
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 public abstract class Person {
     private String name; // variable instance
     private String gender;
 
-    public Person() {} // constructor
-
     public abstract void work(); // abstract method
-
+    // non-abstract or concrete method
     protected void changeName(String newName)
     {
         this.name = newName;
-    } // non-abstract or concrete method
+    }
 }
