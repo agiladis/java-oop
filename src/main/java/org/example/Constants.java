@@ -1,14 +1,15 @@
 package org.example;
 
 /* FINAL keyword:
-    - final pada kelas Constants mencegah kelas lain untuk mewarisinya.
-    - final pada metode displayMaxSize mencegah metode tersebut dioverride.
+    - final pada class Constants mencegah inheritance.
+    - final pada metode displayMaxSize mencegah overriding.
     - final pada field MAX_SIZE memastikan nilainya tetap konstan setelah diinisialisasi.
+    - pada final field karena sudah menjadi nilai yang konstan maka lebih baik dibuat menjadi static agar tidak terjadi duplikasi memori setiap instance yang dibuat
 * */
-final class Constants {
-    final int MAX_SIZE = 100;
+public final class Constants {
+    static final int MAX_SIZE = 100;
 
-    final void displayMaxSize() {
+    public final void displayMaxSize() {
         System.out.println("Max Size: " + MAX_SIZE);
     }
 }
