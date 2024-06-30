@@ -1,8 +1,16 @@
 package org.example;
 
-// Call fro ENUM
+
+// Call for ENUM
 public class Main {
     public static void main(String[] args) {
+        Human student = new Human("aha", 19);
+        System.out.println(student.getNama());
+
+        student.setNama("Aca");
+        System.out.println(student.getNama());
+
+        // ENUM
         Seasons musim = Seasons.WINTER;
 
         if (musim == Seasons.WINTER) {
