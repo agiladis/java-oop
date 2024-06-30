@@ -1,6 +1,7 @@
 package org.example;
 
 /* ENUM:
+    - enum merupakan tipe data khusus pada java
     - berisi konstanta
     - bisa memiliki metode dan atribut/field
 * */
