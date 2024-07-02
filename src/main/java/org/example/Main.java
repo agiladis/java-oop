@@ -1,9 +1,13 @@
 package org.example;
 
-
 // Call for ENUM
 public class Main {
     public static void main(String[] args) {
+        StudentRecords studentRecord = new StudentRecords("Ridwan");
+
+        System.out.println(studentRecord.name());
+        System.out.println(studentRecord.npm());
+        
         Human student = new Human("aha", 19);
         System.out.println(student.getNama());
 
