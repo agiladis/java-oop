@@ -2,9 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        StudentRecords student = new StudentRecords("Ridwan");
+        StudentRecords studentRecord = new StudentRecords("Ridwan");
 
-        System.out.println(student.name());
-        System.out.println(student.npm());
+        System.out.println(studentRecord.name());
+        System.out.println(studentRecord.npm());
     }
 }
