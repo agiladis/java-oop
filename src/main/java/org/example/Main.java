@@ -1,19 +1,29 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+// Call for ENUM
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        StudentRecords studentRecord = new StudentRecords("Ridwan");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println(studentRecord.name());
+        System.out.println(studentRecord.npm());
+        
+        Human student = new Human("aha", 19);
+        System.out.println(student.getNama());
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        student.setNama("Aca");
+        System.out.println(student.getNama());
+
+        // ENUM
+        Seasons musim = Seasons.WINTER;
+
+        if (musim == Seasons.WINTER) {
+            System.out.println("Yaa musim dingin");
+        }
+
+        for (Seasons s : Seasons.values()) // get all values of enum
+        {
+            System.out.println(s + " " + s.value);
         }
     }
 }
